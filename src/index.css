@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — see Claude Design.png "BRAND COLORS" */
+  --color-maroon: #6b2c1f;
+  --color-maroon-dark: #4a1f17;
+  --color-cream: #f7eedb;
+  --color-cream-light: #fcf8f0;
+  --color-ink: #4b403a;
+  --color-muted: #7a6f68;
+  /* Gold is the Primepack logo accent (Logo.jpeg) — used for the mark + hairlines only */
+  --color-gold: #c08d55;
+  --color-gold-light: #d8ab77;
+
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 14px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream-light text-ink font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-maroon-dark;
+  }
+
+  /* Visible keyboard focus everywhere — WCAG 2.2 AA */
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    @apply outline-maroon rounded-sm outline-2 outline-offset-2;
+  }
+
+  ::selection {
+    @apply bg-maroon text-cream;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply text-maroon text-xs font-semibold tracking-[0.18em] uppercase;
+  }
+
+  .card-surface {
+    @apply rounded-card border-maroon/10 border bg-white shadow-[0_1px_2px_rgba(75,64,58,0.04)];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip link */
+.skip-link {
+  @apply focus:bg-maroon focus:text-cream sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-md focus:px-4 focus:py-2;
+}

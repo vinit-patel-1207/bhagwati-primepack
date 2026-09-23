@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Consumer-goods cartons, a shrink-wrapped tray and a kraft mailer on a packing bench">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <rect width="1200" height="380" fill="#FCF8F0"/>
+  <circle cx="930" cy="230" r="240" fill="#C08D55" opacity=".11"/>
+  <ellipse cx="600" cy="820" rx="470" ry="46" fill="#6B2C1F" opacity=".07"/>
+
+  <g>
+    <polygon points="110,250 110,700 400,700 400,250" fill="#C08D55"/>
+    <polygon points="400,250 480,196 480,646 400,700" fill="#A9763F"/>
+    <polygon points="110,250 190,196 480,196 400,250" fill="#D8AB77"/>
+    <rect x="228" y="250" width="54" height="450" fill="#B07F49" opacity=".85"/>
+  </g>
+  <g>
+    <rect x="430" y="330" width="170" height="370" fill="#D8AB77"/>
+    <rect x="430" y="330" width="170" height="80" fill="#C08D55"/>
+    <rect x="454" y="470" width="122" height="12" rx="6" fill="#6B2C1F" opacity=".18"/>
+    <rect x="454" y="502" width="92" height="12" rx="6" fill="#6B2C1F" opacity=".12"/>
+  </g>
+  <g>
+    <rect x="620" y="400" width="190" height="300" rx="10" fill="#C08D55"/>
+    <rect x="620" y="400" width="190" height="300" rx="10" fill="#DCE5DE" opacity=".35"/>
+    <g stroke="#FFFFFF" stroke-width="7" opacity=".55" fill="none">
+      <path d="M668 400v300M716 400v300M764 400v300"/>
+    </g>
+    <rect x="644" y="470" width="142" height="12" rx="6" fill="#6B2C1F" opacity=".14"/>
+  </g>
+  <g>
+    <rect x="840" y="300" width="200" height="400" rx="14" fill="#FFFFFF" stroke="#6B2C1F" stroke-opacity=".14" stroke-width="3"/>
+    <rect x="840" y="300" width="200" height="54" rx="14" fill="#FCF8F0"/>
+    <rect x="862" y="334" width="156" height="12" rx="6" fill="#C08D55" opacity=".7"/>
+    <rect x="872" y="430" width="136" height="140" rx="10" fill="#F7EEDB"/>
+    <rect x="896" y="462" width="90" height="10" rx="5" fill="#6B2C1F" opacity=".24"/>
+    <rect x="896" y="492" width="66" height="10" rx="5" fill="#6B2C1F" opacity=".16"/>
+  </g>
+  <g>
+    <rect x="1060" y="430" width="110" height="270" rx="12" fill="#4A1F17"/>
+    <rect x="1060" y="430" width="110" height="34" rx="12" fill="#6B2C1F"/>
+    <rect x="1080" y="500" width="70" height="10" rx="5" fill="#C08D55" opacity=".5"/>
+  </g>
+  <rect x="60" y="700" width="1080" height="34" rx="10" fill="#B07F49"/>
+  <rect x="60" y="734" width="1080" height="20" fill="#A9763F"/>
+</svg>

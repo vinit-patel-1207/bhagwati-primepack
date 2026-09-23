@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Sealed white cartons and tamper-evident pouches on a clean bench">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <rect width="1200" height="380" fill="#FCF8F0"/>
+  <circle cx="270" cy="230" r="240" fill="#C08D55" opacity=".10"/>
+  <ellipse cx="600" cy="820" rx="460" ry="44" fill="#6B2C1F" opacity=".07"/>
+
+  <g>
+    <rect x="120" y="240" width="270" height="460" rx="10" fill="#FFFFFF" stroke="#6B2C1F" stroke-opacity=".14" stroke-width="3"/>
+    <rect x="120" y="240" width="270" height="74" fill="#F1E7D5"/>
+    <rect x="154" y="360" width="202" height="12" rx="6" fill="#6B2C1F" opacity=".2"/>
+    <rect x="154" y="396" width="150" height="12" rx="6" fill="#6B2C1F" opacity=".14"/>
+    <g fill="#4A1F17" opacity=".65">
+      <rect x="154" y="480" width="6" height="60"/><rect x="168" y="480" width="3" height="60"/>
+      <rect x="179" y="480" width="8" height="60"/><rect x="195" y="480" width="3" height="60"/>
+      <rect x="206" y="480" width="6" height="60"/><rect x="220" y="480" width="9" height="60"/>
+      <rect x="237" y="480" width="3" height="60"/><rect x="247" y="480" width="7" height="60"/>
+    </g>
+  </g>
+  <g>
+    <rect x="420" y="330" width="220" height="370" rx="10" fill="#FCF8F0" stroke="#6B2C1F" stroke-opacity=".12" stroke-width="3"/>
+    <rect x="420" y="330" width="220" height="62" fill="#EFE3CC"/>
+    <rect x="452" y="440" width="156" height="12" rx="6" fill="#6B2C1F" opacity=".16"/>
+    <rect x="452" y="474" width="116" height="12" rx="6" fill="#6B2C1F" opacity=".12"/>
+  </g>
+  <g>
+    <rect x="670" y="270" width="240" height="430" rx="16" fill="#FFFFFF" opacity=".95" stroke="#6B2C1F" stroke-opacity=".16" stroke-width="3"/>
+    <rect x="670" y="270" width="240" height="70" rx="16" fill="#C08D55" opacity=".35"/>
+    <rect x="696" y="322" width="188" height="14" rx="7" fill="#6B2C1F" opacity=".4"/>
+    <rect x="706" y="420" width="168" height="150" rx="10" fill="#F7EEDB"/>
+    <rect x="730" y="452" width="120" height="12" rx="6" fill="#6B2C1F" opacity=".22"/>
+    <rect x="730" y="486" width="88" height="12" rx="6" fill="#6B2C1F" opacity=".16"/>
+  </g>
+  <g>
+    <rect x="940" y="390" width="180" height="310" rx="14" fill="#4A1F17"/>
+    <rect x="940" y="390" width="180" height="48" rx="14" fill="#6B2C1F"/>
+    <rect x="964" y="424" width="132" height="12" rx="6" fill="#C08D55" opacity=".55"/>
+    <rect x="974" y="500" width="112" height="110" rx="8" fill="#F7EEDB" opacity=".18"/>
+  </g>
+  <rect x="70" y="700" width="1060" height="32" rx="10" fill="#E3D6BD"/>
+  <rect x="70" y="732" width="1060" height="18" fill="#D6C7AB"/>
+</svg>

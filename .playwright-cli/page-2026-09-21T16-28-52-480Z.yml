@@ -1,0 +1,132 @@
+- generic [ref=f6e3]:
+  - link "Skip to content" [ref=f6e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f6e5]:
+    - generic [ref=f6e6]:
+      - link "Bhagwati Primepack — home" [ref=f6e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f6e17]:
+          - generic [ref=f6e18]: BHAGWATI
+          - generic [ref=f6e19]: PRIMEPACK
+      - navigation "Primary" [ref=f6e20]:
+        - link "Home" [ref=f6e21] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f6e22] [cursor=pointer]:
+          - /url: /about
+        - button "Products" [ref=f6e24]
+        - link "Industries" [ref=f6e27] [cursor=pointer]:
+          - /url: /industries
+        - link "Contact" [ref=f6e28] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f6e29]:
+        - link "Search products" [ref=f6e30] [cursor=pointer]:
+          - /url: /products
+        - link "Get a Quote" [ref=f6e34] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=f6e35]:
+    - status [ref=f6e36]:
+      - generic [ref=f6e38]: Loading…
+  - contentinfo [ref=f6e39]:
+    - generic [ref=f6e40]:
+      - generic [ref=f6e41]:
+        - generic [ref=f6e51]:
+          - generic [ref=f6e52]: BHAGWATI
+          - generic [ref=f6e53]: PRIMEPACK
+        - paragraph [ref=f6e54]: Your trusted partner for quality packaging products and solutions. We serve businesses across multiple industries with reliable supply and dedicated support.
+        - paragraph [ref=f6e55]: PACK SMART • SHIP BETTER
+      - generic [ref=f6e56]:
+        - heading "Quick Links" [level=2] [ref=f6e57]
+        - list [ref=f6e58]:
+          - listitem [ref=f6e59]:
+            - link "Home" [ref=f6e60] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f6e61]:
+            - link "About" [ref=f6e62] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f6e63]:
+            - link "Products" [ref=f6e64] [cursor=pointer]:
+              - /url: /products
+          - listitem [ref=f6e65]:
+            - link "Industries" [ref=f6e66] [cursor=pointer]:
+              - /url: /industries
+          - listitem [ref=f6e67]:
+            - link "Contact" [ref=f6e68] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=f6e69]:
+        - heading "Products" [level=2] [ref=f6e70]
+        - list [ref=f6e71]:
+          - listitem [ref=f6e72]:
+            - link "Courier & Mailing Bags" [ref=f6e73] [cursor=pointer]:
+              - /url: /products#courier-mailing-bags
+          - listitem [ref=f6e74]:
+            - link "Tamper Evident Packaging" [ref=f6e75] [cursor=pointer]:
+              - /url: /products#tamper-evident-packaging
+          - listitem [ref=f6e76]:
+            - link "Bubble Packaging" [ref=f6e77] [cursor=pointer]:
+              - /url: /products#bubble-packaging
+          - listitem [ref=f6e78]:
+            - link "Kraft Packaging" [ref=f6e79] [cursor=pointer]:
+              - /url: /products#kraft-packaging
+          - listitem [ref=f6e80]:
+            - link "Corrugated Boxes" [ref=f6e81] [cursor=pointer]:
+              - /url: /products#corrugated-boxes
+          - listitem [ref=f6e82]:
+            - link "Packaging Tapes" [ref=f6e83] [cursor=pointer]:
+              - /url: /products#packaging-tapes
+      - generic [ref=f6e84]:
+        - heading "Industries" [level=2] [ref=f6e85]
+        - list [ref=f6e86]:
+          - listitem [ref=f6e87]:
+            - link "E-Commerce" [ref=f6e88] [cursor=pointer]:
+              - /url: /industries#e-commerce
+          - listitem [ref=f6e89]:
+            - link "Retail" [ref=f6e90] [cursor=pointer]:
+              - /url: /industries#retail
+          - listitem [ref=f6e91]:
+            - link "FMCG" [ref=f6e92] [cursor=pointer]:
+              - /url: /industries#fmcg
+          - listitem [ref=f6e93]:
+            - link "Pharmaceuticals" [ref=f6e94] [cursor=pointer]:
+              - /url: /industries#pharmaceuticals
+          - listitem [ref=f6e95]:
+            - link "Logistics" [ref=f6e96] [cursor=pointer]:
+              - /url: /industries#logistics
+          - listitem [ref=f6e97]:
+            - link "Manufacturing" [ref=f6e98] [cursor=pointer]:
+              - /url: /industries#manufacturing
+      - generic [ref=f6e99]:
+        - heading "Contact Us" [level=2] [ref=f6e100]
+        - list [ref=f6e101]:
+          - listitem [ref=f6e102]:
+            - link "+91 88237 84265" [ref=f6e105] [cursor=pointer]:
+              - /url: tel:+918823784265
+          - listitem [ref=f6e106]:
+            - link "info@bhagwatiprimepack.in" [ref=f6e110] [cursor=pointer]:
+              - /url: mailto:info@bhagwatiprimepack.in
+          - listitem [ref=f6e111]:
+            - generic [ref=f6e115]: Shed No. 24, Vinayak Industrial EstateAhmedabad, Gujarat 382430
+        - list [ref=f6e116]:
+          - listitem [ref=f6e117]:
+            - link "Facebook" [ref=f6e118] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+          - listitem [ref=f6e121]:
+            - link "Instagram" [ref=f6e122] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+          - listitem [ref=f6e125]:
+            - link "LinkedIn" [ref=f6e126] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+          - listitem [ref=f6e129]:
+            - link "YouTube" [ref=f6e130] [cursor=pointer]:
+              - /url: https://www.youtube.com/
+    - generic [ref=f6e134]:
+      - paragraph [ref=f6e135]: © 2026 Bhagwati Primepack. All rights reserved.
+      - list [ref=f6e136]:
+        - listitem [ref=f6e137]:
+          - link "Privacy Policy" [ref=f6e138] [cursor=pointer]:
+            - /url: /privacy-policy
+        - listitem [ref=f6e139]: "|"
+        - listitem [ref=f6e140]:
+          - link "Terms & Conditions" [ref=f6e141] [cursor=pointer]:
+            - /url: /terms
+  - link "Chat with us on WhatsApp" [ref=f6e142] [cursor=pointer]:
+    - /url: https://wa.me/918823784265?text=Hi%20Bhagwati%20Primepack%2C%20I%20would%20like%20to%20enquire%20about%20packaging%20products.

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="An open kraft carton with tissue paper and a blank branded mailer beside it">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <circle cx="270" cy="190" r="250" fill="#C08D55" opacity=".10"/>
+  <ellipse cx="600" cy="740" rx="340" ry="42" fill="#6B2C1F" opacity=".09"/>
+  <g transform="rotate(8 830 500)">
+    <rect x="720" y="320" width="230" height="330" rx="12" fill="#C08D55"/>
+    <rect x="720" y="320" width="230" height="60" rx="12" fill="#B07F49"/>
+    <circle cx="835" cy="470" r="52" fill="none" stroke="#6B2C1F" stroke-opacity=".30" stroke-width="4"/>
+    <rect x="785" y="556" width="100" height="10" rx="5" fill="#6B2C1F" opacity=".22"/>
+  </g>
+  <g>
+    <polygon points="300,400 240,318 520,318 580,400" fill="#D8AB77"/>
+    <polygon points="700,400 760,318 480,318 420,400" fill="#CFA06A"/>
+    <polygon points="300,400 700,400 700,432 300,432" fill="#A9763F"/>
+    <polygon points="312,402 688,402 658,470 342,470" fill="#8F6A3C" opacity=".55"/>
+    <path d="M360 462 c60-40 120-10 180-46 60-36 100 6 150-14 -10 60-60 92-160 92 -90 0-150-12-170-32 Z" fill="#FCF8F0"/>
+    <path d="M400 440 c50-24 90 2 140-22" fill="none" stroke="#6B2C1F" stroke-opacity=".12" stroke-width="3"/>
+    <polygon points="300,432 300,700 700,700 700,432" fill="#C08D55"/>
+    <polygon points="700,432 780,380 780,648 700,700" fill="#A9763F"/>
+    <g stroke="#6B2C1F" stroke-opacity=".16" stroke-width="3" fill="none">
+      <polygon points="300,432 300,700 700,700 700,432"/>
+      <polygon points="700,432 780,380 780,648 700,700"/>
+    </g>
+  </g>
+</svg>

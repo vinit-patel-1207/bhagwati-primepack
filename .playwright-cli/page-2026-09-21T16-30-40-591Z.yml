@@ -1,0 +1,353 @@
+- generic [ref=f16e3]:
+  - link "Skip to content" [ref=f16e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f16e5]:
+    - generic [ref=f16e6]:
+      - link "Bhagwati Primepack — home" [ref=f16e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f16e17]:
+          - generic [ref=f16e18]: BHAGWATI
+          - generic [ref=f16e19]: PRIMEPACK
+      - navigation "Primary" [ref=f16e20]:
+        - link "Home" [ref=f16e21] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f16e22] [cursor=pointer]:
+          - /url: /about
+        - button "Products" [ref=f16e24]
+        - link "Industries" [ref=f16e27] [cursor=pointer]:
+          - /url: /industries
+        - link "Contact" [ref=f16e28] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f16e29]:
+        - link "Search products" [ref=f16e30] [cursor=pointer]:
+          - /url: /products
+        - link "Get a Quote" [ref=f16e34] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=f16e35]:
+    - generic [ref=f16e37]:
+      - generic [ref=f16e38]:
+        - paragraph [ref=f16e39]: Premium Packaging Solutions
+        - heading "Packaging Solutions That Keep Your Business Moving" [level=1] [ref=f16e40]: Packaging SolutionsThat Keep YourBusiness Moving
+        - paragraph [ref=f16e41]: Reliable packaging products for e-commerce, retail, logistics, manufacturing and growing businesses.
+        - generic [ref=f16e42]:
+          - link "Explore Products" [ref=f16e43] [cursor=pointer]:
+            - /url: /products
+          - link "Get a Quote" [ref=f16e44] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f16e45]:
+        - img "White and black poly courier bags, kraft mailers, a corrugated carton, tape rolls and a roll of bubble wrap arranged together" [ref=f16e47]
+        - generic [ref=f16e48]:
+          - generic [ref=f16e49]: QualityReliabilityPartnership
+          - paragraph [ref=f16e51]: QualityReliabilityPartnership
+    - generic [ref=f16e53]:
+      - generic [ref=f16e59]:
+        - heading "Premium Quality Products" [level=3] [ref=f16e60]
+        - paragraph [ref=f16e61]: Material-tested packaging that protects goods through every leg of the journey.
+      - generic [ref=f16e69]:
+        - heading "Reliable Supply Chain" [level=3] [ref=f16e70]
+        - paragraph [ref=f16e71]: Held stock and planned replenishment so your dispatch lines never wait.
+      - generic [ref=f16e78]:
+        - heading "Bulk Order Capability" [level=3] [ref=f16e79]
+        - paragraph [ref=f16e80]: Volume pricing and scheduled deliveries built around your order cycles.
+      - generic [ref=f16e88]:
+        - heading "Dedicated Business Support" [level=3] [ref=f16e89]
+        - paragraph [ref=f16e90]: A named contact for specifications, samples, pricing and reordering.
+    - generic [ref=f16e91]:
+      - generic [ref=f16e92]:
+        - generic [ref=f16e93]:
+          - heading "Our Product Categories" [level=2] [ref=f16e94]
+          - paragraph [ref=f16e95]: Wide range of packaging solutions for every business need
+        - link "View All Products →" [ref=f16e97] [cursor=pointer]:
+          - /url: /products
+      - generic [ref=f16e98]:
+        - article [ref=f16e99]:
+          - generic [ref=f16e100]:
+            - img "Courier & Mailing Bags supplied by Bhagwati Primepack" [ref=f16e102]
+            - generic [ref=f16e103]:
+              - heading "Courier & Mailing Bags" [level=3] [ref=f16e104]
+              - paragraph [ref=f16e105]: Secure & durable shipping bags
+              - generic [ref=f16e107]:
+                - link "View Courier & Mailing Bags" [ref=f16e108] [cursor=pointer]:
+                  - /url: /products#courier-mailing-bags
+                - link "Request a quote for Courier & Mailing Bags" [ref=f16e111] [cursor=pointer]:
+                  - /url: /contact?product=courier-mailing-bags
+        - article [ref=f16e114]:
+          - generic [ref=f16e115]:
+            - img "Tamper Evident Packaging supplied by Bhagwati Primepack" [ref=f16e117]
+            - generic [ref=f16e118]:
+              - heading "Tamper Evident Packaging" [level=3] [ref=f16e119]
+              - paragraph [ref=f16e120]: Safety & authenticity
+              - generic [ref=f16e122]:
+                - link "View Tamper Evident Packaging" [ref=f16e123] [cursor=pointer]:
+                  - /url: /products#tamper-evident-packaging
+                - link "Request a quote for Tamper Evident Packaging" [ref=f16e126] [cursor=pointer]:
+                  - /url: /contact?product=tamper-evident-packaging
+        - article [ref=f16e129]:
+          - generic [ref=f16e130]:
+            - img "Bubble Packaging supplied by Bhagwati Primepack" [ref=f16e132]
+            - generic [ref=f16e133]:
+              - heading "Bubble Packaging" [level=3] [ref=f16e134]
+              - paragraph [ref=f16e135]: Lightweight & protective
+              - generic [ref=f16e137]:
+                - link "View Bubble Packaging" [ref=f16e138] [cursor=pointer]:
+                  - /url: /products#bubble-packaging
+                - link "Request a quote for Bubble Packaging" [ref=f16e141] [cursor=pointer]:
+                  - /url: /contact?product=bubble-packaging
+        - article [ref=f16e144]:
+          - generic [ref=f16e145]:
+            - img "Kraft Packaging supplied by Bhagwati Primepack" [ref=f16e147]
+            - generic [ref=f16e148]:
+              - heading "Kraft Packaging" [level=3] [ref=f16e149]
+              - paragraph [ref=f16e150]: Eco-friendly & strong
+              - generic [ref=f16e152]:
+                - link "View Kraft Packaging" [ref=f16e153] [cursor=pointer]:
+                  - /url: /products#kraft-packaging
+                - link "Request a quote for Kraft Packaging" [ref=f16e156] [cursor=pointer]:
+                  - /url: /contact?product=kraft-packaging
+        - article [ref=f16e159]:
+          - generic [ref=f16e160]:
+            - img "Corrugated Boxes supplied by Bhagwati Primepack" [ref=f16e162]
+            - generic [ref=f16e163]:
+              - heading "Corrugated Boxes" [level=3] [ref=f16e164]
+              - paragraph [ref=f16e165]: Reliable & sturdy
+              - generic [ref=f16e167]:
+                - link "View Corrugated Boxes" [ref=f16e168] [cursor=pointer]:
+                  - /url: /products#corrugated-boxes
+                - link "Request a quote for Corrugated Boxes" [ref=f16e171] [cursor=pointer]:
+                  - /url: /contact?product=corrugated-boxes
+        - article [ref=f16e174]:
+          - generic [ref=f16e175]:
+            - img "Packaging Tapes supplied by Bhagwati Primepack" [ref=f16e177]
+            - generic [ref=f16e178]:
+              - heading "Packaging Tapes" [level=3] [ref=f16e179]
+              - paragraph [ref=f16e180]: Strong adhesion
+              - generic [ref=f16e182]:
+                - link "View Packaging Tapes" [ref=f16e183] [cursor=pointer]:
+                  - /url: /products#packaging-tapes
+                - link "Request a quote for Packaging Tapes" [ref=f16e186] [cursor=pointer]:
+                  - /url: /contact?product=packaging-tapes
+        - article [ref=f16e189]:
+          - generic [ref=f16e190]:
+            - img "Shipping Labels supplied by Bhagwati Primepack" [ref=f16e192]
+            - generic [ref=f16e193]:
+              - heading "Shipping Labels" [level=3] [ref=f16e194]
+              - paragraph [ref=f16e195]: Clear & professional
+              - generic [ref=f16e197]:
+                - link "View Shipping Labels" [ref=f16e198] [cursor=pointer]:
+                  - /url: /products#shipping-labels
+                - link "Request a quote for Shipping Labels" [ref=f16e201] [cursor=pointer]:
+                  - /url: /contact?product=shipping-labels
+        - article [ref=f16e204]:
+          - generic [ref=f16e205]:
+            - img "Industrial Packaging supplied by Bhagwati Primepack" [ref=f16e207]
+            - generic [ref=f16e208]:
+              - heading "Industrial Packaging" [level=3] [ref=f16e209]
+              - paragraph [ref=f16e210]: For heavy-duty needs
+              - generic [ref=f16e212]:
+                - link "View Industrial Packaging" [ref=f16e213] [cursor=pointer]:
+                  - /url: /products#industrial-packaging
+                - link "Request a quote for Industrial Packaging" [ref=f16e216] [cursor=pointer]:
+                  - /url: /contact?product=industrial-packaging
+    - generic [ref=f16e220]:
+      - img "Delivery worker loading sealed cartons and courier parcels onto a hand trolley" [ref=f16e223]
+      - generic [ref=f16e224]:
+        - heading "Your Trusted Packaging Partner" [level=2] [ref=f16e225]
+        - paragraph [ref=f16e226]: Bhagwati Primepack is a leading packaging products supplier, offering high-quality and cost-effective solutions for businesses across various industries. We are committed to providing reliable products, timely delivery and exceptional customer support.
+        - link "Know More About Us" [ref=f16e227] [cursor=pointer]:
+          - /url: /about
+      - list [ref=f16e229]:
+        - listitem [ref=f16e230]:
+          - generic [ref=f16e235]:
+            - heading "Quality Products" [level=3] [ref=f16e236]
+            - paragraph [ref=f16e237]: Always
+        - listitem [ref=f16e238]:
+          - generic [ref=f16e243]:
+            - heading "On-Time Delivery" [level=3] [ref=f16e244]
+            - paragraph [ref=f16e245]: Every Time
+        - listitem [ref=f16e246]:
+          - generic [ref=f16e253]:
+            - heading "Customer Satisfaction" [level=3] [ref=f16e254]
+            - paragraph [ref=f16e255]: Our Priority
+    - generic [ref=f16e256]:
+      - generic [ref=f16e257]:
+        - generic [ref=f16e258]:
+          - heading "Industries We Serve" [level=2] [ref=f16e259]
+          - paragraph [ref=f16e260]: Packaging solutions for diverse industry needs
+        - link "View All Industries →" [ref=f16e262] [cursor=pointer]:
+          - /url: /industries
+      - list [ref=f16e264]:
+        - listitem [ref=f16e265]:
+          - link [ref=f16e266] [cursor=pointer]:
+            - /url: /industries#e-commerce
+            - img "Packaging in use across the E-Commerce sector" [ref=f16e268]
+            - paragraph [ref=f16e269]: E-Commerce
+        - listitem [ref=f16e270]:
+          - link [ref=f16e271] [cursor=pointer]:
+            - /url: /industries#retail
+            - img "Packaging in use across the Retail sector" [ref=f16e273]
+            - paragraph [ref=f16e274]: Retail
+        - listitem [ref=f16e275]:
+          - link [ref=f16e276] [cursor=pointer]:
+            - /url: /industries#fmcg
+            - img "Packaging in use across the FMCG sector" [ref=f16e278]
+            - paragraph [ref=f16e279]: FMCG
+        - listitem [ref=f16e280]:
+          - link [ref=f16e281] [cursor=pointer]:
+            - /url: /industries#pharmaceuticals
+            - img "Packaging in use across the Pharmaceuticals sector" [ref=f16e283]
+            - paragraph [ref=f16e284]: Pharmaceuticals
+        - listitem [ref=f16e285]:
+          - link [ref=f16e286] [cursor=pointer]:
+            - /url: /industries#logistics
+            - img "Packaging in use across the Logistics sector" [ref=f16e288]
+            - paragraph [ref=f16e289]: Logistics
+    - generic [ref=f16e291]:
+      - generic [ref=f16e293]:
+        - paragraph [ref=f16e294]: How we work
+        - heading "A simple process, start to reorder" [level=2] [ref=f16e295]
+        - paragraph [ref=f16e296]: From first specification to a repeating supply schedule.
+      - generic [ref=f16e297]:
+        - generic [ref=f16e298]:
+          - text: "01"
+          - heading "Share your requirement" [level=3] [ref=f16e299]
+          - paragraph [ref=f16e300]: Tell us sizes, volumes and what you ship.
+        - generic [ref=f16e301]:
+          - text: "02"
+          - heading "Get a specification & quote" [level=3] [ref=f16e302]
+          - paragraph [ref=f16e303]: We recommend the right material and price it.
+        - generic [ref=f16e304]:
+          - text: "03"
+          - heading "Approve a sample" [level=3] [ref=f16e305]
+          - paragraph [ref=f16e306]: Test fit and strength before committing to volume.
+        - generic [ref=f16e307]:
+          - text: "04"
+          - heading "Scheduled supply" [level=3] [ref=f16e308]
+          - paragraph [ref=f16e309]: Planned deliveries so your dispatch line never waits.
+    - generic [ref=f16e310]:
+      - generic [ref=f16e312]:
+        - paragraph [ref=f16e313]: Questions
+        - heading "Frequently Asked" [level=2] [ref=f16e314]
+        - paragraph [ref=f16e315]: The things businesses ask us most before their first order.
+      - generic [ref=f16e317]:
+        - group [ref=f16e318]:
+          - generic "What is the minimum order quantity?" [ref=f16e319] [cursor=pointer]
+        - group [ref=f16e321]:
+          - generic "Do you supply custom printed and branded packaging?" [ref=f16e322] [cursor=pointer]
+        - group [ref=f16e324]:
+          - generic "Can I get samples before placing a bulk order?" [ref=f16e325] [cursor=pointer]
+        - group [ref=f16e327]:
+          - generic "What are your delivery timelines?" [ref=f16e328] [cursor=pointer]
+        - group [ref=f16e330]:
+          - generic "Which regions do you supply?" [ref=f16e331] [cursor=pointer]
+    - generic [ref=f16e334]:
+      - heading "Looking for the Right Packaging Solution?" [level=2] [ref=f16e335]
+      - paragraph [ref=f16e336]: Get in touch with our team for the best packaging products and bulk pricing.
+      - generic [ref=f16e337]:
+        - link "Get a Quote" [ref=f16e338] [cursor=pointer]:
+          - /url: /contact
+        - link "Contact Us" [ref=f16e339] [cursor=pointer]:
+          - /url: /contact#form
+  - contentinfo [ref=f16e340]:
+    - generic [ref=f16e341]:
+      - generic [ref=f16e342]:
+        - generic [ref=f16e352]:
+          - generic [ref=f16e353]: BHAGWATI
+          - generic [ref=f16e354]: PRIMEPACK
+        - paragraph [ref=f16e355]: Your trusted partner for quality packaging products and solutions. We serve businesses across multiple industries with reliable supply and dedicated support.
+        - paragraph [ref=f16e356]: PACK SMART • SHIP BETTER
+      - generic [ref=f16e357]:
+        - heading "Quick Links" [level=2] [ref=f16e358]
+        - list [ref=f16e359]:
+          - listitem [ref=f16e360]:
+            - link "Home" [ref=f16e361] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f16e362]:
+            - link "About" [ref=f16e363] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f16e364]:
+            - link "Products" [ref=f16e365] [cursor=pointer]:
+              - /url: /products
+          - listitem [ref=f16e366]:
+            - link "Industries" [ref=f16e367] [cursor=pointer]:
+              - /url: /industries
+          - listitem [ref=f16e368]:
+            - link "Contact" [ref=f16e369] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=f16e370]:
+        - heading "Products" [level=2] [ref=f16e371]
+        - list [ref=f16e372]:
+          - listitem [ref=f16e373]:
+            - link "Courier & Mailing Bags" [ref=f16e374] [cursor=pointer]:
+              - /url: /products#courier-mailing-bags
+          - listitem [ref=f16e375]:
+            - link "Tamper Evident Packaging" [ref=f16e376] [cursor=pointer]:
+              - /url: /products#tamper-evident-packaging
+          - listitem [ref=f16e377]:
+            - link "Bubble Packaging" [ref=f16e378] [cursor=pointer]:
+              - /url: /products#bubble-packaging
+          - listitem [ref=f16e379]:
+            - link "Kraft Packaging" [ref=f16e380] [cursor=pointer]:
+              - /url: /products#kraft-packaging
+          - listitem [ref=f16e381]:
+            - link "Corrugated Boxes" [ref=f16e382] [cursor=pointer]:
+              - /url: /products#corrugated-boxes
+          - listitem [ref=f16e383]:
+            - link "Packaging Tapes" [ref=f16e384] [cursor=pointer]:
+              - /url: /products#packaging-tapes
+      - generic [ref=f16e385]:
+        - heading "Industries" [level=2] [ref=f16e386]
+        - list [ref=f16e387]:
+          - listitem [ref=f16e388]:
+            - link "E-Commerce" [ref=f16e389] [cursor=pointer]:
+              - /url: /industries#e-commerce
+          - listitem [ref=f16e390]:
+            - link "Retail" [ref=f16e391] [cursor=pointer]:
+              - /url: /industries#retail
+          - listitem [ref=f16e392]:
+            - link "FMCG" [ref=f16e393] [cursor=pointer]:
+              - /url: /industries#fmcg
+          - listitem [ref=f16e394]:
+            - link "Pharmaceuticals" [ref=f16e395] [cursor=pointer]:
+              - /url: /industries#pharmaceuticals
+          - listitem [ref=f16e396]:
+            - link "Logistics" [ref=f16e397] [cursor=pointer]:
+              - /url: /industries#logistics
+          - listitem [ref=f16e398]:
+            - link "Manufacturing" [ref=f16e399] [cursor=pointer]:
+              - /url: /industries#manufacturing
+      - generic [ref=f16e400]:
+        - heading "Contact Us" [level=2] [ref=f16e401]
+        - list [ref=f16e402]:
+          - listitem [ref=f16e403]:
+            - link "+91 88237 84265" [ref=f16e406] [cursor=pointer]:
+              - /url: tel:+918823784265
+          - listitem [ref=f16e407]:
+            - link "info@bhagwatiprimepack.in" [ref=f16e411] [cursor=pointer]:
+              - /url: mailto:info@bhagwatiprimepack.in
+          - listitem [ref=f16e412]:
+            - generic [ref=f16e416]: Shed No. 24, Vinayak Industrial EstateAhmedabad, Gujarat 382430
+        - list [ref=f16e417]:
+          - listitem [ref=f16e418]:
+            - link "Facebook" [ref=f16e419] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+          - listitem [ref=f16e422]:
+            - link "Instagram" [ref=f16e423] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+          - listitem [ref=f16e426]:
+            - link "LinkedIn" [ref=f16e427] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+          - listitem [ref=f16e430]:
+            - link "YouTube" [ref=f16e431] [cursor=pointer]:
+              - /url: https://www.youtube.com/
+    - generic [ref=f16e435]:
+      - paragraph [ref=f16e436]: © 2026 Bhagwati Primepack. All rights reserved.
+      - list [ref=f16e437]:
+        - listitem [ref=f16e438]:
+          - link "Privacy Policy" [ref=f16e439] [cursor=pointer]:
+            - /url: /privacy-policy
+        - listitem [ref=f16e440]: "|"
+        - listitem [ref=f16e441]:
+          - link "Terms & Conditions" [ref=f16e442] [cursor=pointer]:
+            - /url: /terms
+  - link "Chat with us on WhatsApp" [ref=f16e443] [cursor=pointer]:
+    - /url: https://wa.me/918823784265?text=Hi%20Bhagwati%20Primepack%2C%20I%20would%20like%20to%20enquire%20about%20packaging%20products.

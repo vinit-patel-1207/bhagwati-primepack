@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="A large and a small taped corrugated carton in three-quarter view">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <circle cx="280" cy="200" r="250" fill="#C08D55" opacity=".10"/>
+  <ellipse cx="600" cy="740" rx="350" ry="42" fill="#6B2C1F" opacity=".09"/>
+  <g>
+    <polygon points="330,400 330,690 640,690 640,400" fill="#C08D55"/>
+    <polygon points="640,400 760,318 760,608 640,690" fill="#A9763F"/>
+    <polygon points="330,400 450,318 760,318 640,400" fill="#D8AB77"/>
+    <rect x="455" y="400" width="62" height="290" fill="#B07F49" opacity=".85"/>
+    <polygon points="455,400 575,318 637,318 517,400" fill="#C79A63" opacity=".9"/>
+    <g stroke="#6B2C1F" stroke-opacity=".16" stroke-width="3" fill="none">
+      <polygon points="330,400 330,690 640,690 640,400"/>
+      <polygon points="640,400 760,318 760,608 640,690"/>
+      <polygon points="330,400 450,318 760,318 640,400"/>
+    </g>
+  </g>
+  <g>
+    <polygon points="660,530 660,690 850,690 850,530" fill="#C08D55"/>
+    <polygon points="850,530 930,476 930,636 850,690" fill="#A9763F"/>
+    <polygon points="660,530 740,476 930,476 850,530" fill="#D8AB77"/>
+    <rect x="735" y="530" width="42" height="160" fill="#B07F49" opacity=".85"/>
+    <g stroke="#6B2C1F" stroke-opacity=".16" stroke-width="3" fill="none">
+      <polygon points="660,530 660,690 850,690 850,530"/>
+      <polygon points="850,530 930,476 930,636 850,690"/>
+      <polygon points="660,530 740,476 930,476 850,530"/>
+    </g>
+  </g>
+</svg>

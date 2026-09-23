@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Aisle of bulk cartons on racking in a wholesale warehouse">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <rect width="1200" height="400" fill="#FCF8F0"/>
+  <polygon points="380,400 820,400 980,900 220,900" fill="#EFE3CC" opacity=".7"/>
+  <circle cx="600" cy="170" r="190" fill="#C08D55" opacity=".10"/>
+  <g stroke="#A9763F" stroke-width="16" fill="none" opacity=".8">
+    <path d="M90 230v600M360 300v520M840 300v520M1110 230v600"/>
+    <path d="M90 450h270M840 450h270M90 640h270M840 640h270"/>
+  </g>
+  <g>
+    <rect x="110" y="340" width="110" height="110" fill="#C08D55"/>
+    <rect x="230" y="340" width="120" height="110" fill="#D8AB77"/>
+    <rect x="110" y="530" width="120" height="110" fill="#D8AB77"/>
+    <rect x="240" y="530" width="110" height="110" fill="#C08D55"/>
+    <rect x="110" y="720" width="240" height="110" fill="#C08D55"/>
+    <rect x="850" y="340" width="120" height="110" fill="#D8AB77"/>
+    <rect x="980" y="340" width="110" height="110" fill="#C08D55"/>
+    <rect x="850" y="530" width="110" height="110" fill="#C08D55"/>
+    <rect x="970" y="530" width="120" height="110" fill="#D8AB77"/>
+    <rect x="850" y="720" width="240" height="110" fill="#D8AB77"/>
+  </g>
+  <g>
+    <rect x="470" y="520" width="260" height="130" fill="#D8AB77"/>
+    <rect x="470" y="520" width="260" height="130" fill="none" stroke="#6B2C1F" stroke-opacity=".12" stroke-width="3"/>
+    <rect x="586" y="520" width="30" height="130" fill="#C79A63"/>
+    <rect x="440" y="650" width="320" height="140" fill="#C08D55"/>
+    <rect x="440" y="650" width="320" height="140" fill="none" stroke="#6B2C1F" stroke-opacity=".12" stroke-width="3"/>
+    <rect x="584" y="650" width="34" height="140" fill="#B07F49"/>
+    <rect x="410" y="790" width="380" height="50" fill="#B07F49"/>
+  </g>
+  <ellipse cx="600" cy="860" rx="380" ry="34" fill="#6B2C1F" opacity=".06"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Poly courier parcels and cartons stacked on a trolley in a fulfilment aisle">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <rect width="1200" height="380" fill="#FCF8F0"/>
+  <circle cx="960" cy="230" r="230" fill="#C08D55" opacity=".12"/>
+  <g stroke="#A9763F" stroke-width="18" opacity=".55" fill="none">
+    <path d="M90 120v620M1110 120v620M90 380h150M960 380h150"/>
+  </g>
+  <ellipse cx="600" cy="830" rx="440" ry="44" fill="#6B2C1F" opacity=".07"/>
+
+  <g>
+    <rect x="300" y="180" width="270" height="250" rx="18" fill="#FFFFFF" stroke="#6B2C1F" stroke-opacity=".14" stroke-width="3"/>
+    <rect x="300" y="180" width="270" height="52" rx="18" fill="#FCF8F0"/>
+    <rect x="326" y="214" width="218" height="12" rx="6" fill="#C08D55" opacity=".7"/>
+    <rect x="338" y="266" width="194" height="130" rx="10" fill="#F7EEDB"/>
+    <g fill="#4A1F17" opacity=".72">
+      <rect x="362" y="290" width="6" height="48"/><rect x="376" y="290" width="4" height="48"/>
+      <rect x="388" y="290" width="8" height="48"/><rect x="404" y="290" width="4" height="48"/>
+      <rect x="416" y="290" width="6" height="48"/><rect x="430" y="290" width="9" height="48"/>
+      <rect x="447" y="290" width="4" height="48"/><rect x="459" y="290" width="7" height="48"/>
+    </g>
+    <rect x="362" y="352" width="130" height="12" rx="6" fill="#6B2C1F" opacity=".22"/>
+  </g>
+  <g>
+    <rect x="600" y="230" width="240" height="200" rx="16" fill="#4A1F17"/>
+    <rect x="600" y="230" width="240" height="46" rx="16" fill="#6B2C1F"/>
+    <rect x="624" y="262" width="192" height="12" rx="6" fill="#C08D55" opacity=".6"/>
+    <rect x="634" y="320" width="172" height="90" rx="8" fill="#F7EEDB" opacity=".18"/>
+  </g>
+  <g>
+    <rect x="280" y="430" width="300" height="230" rx="14" fill="#D8AB77"/>
+    <path d="M280 444a14 14 0 0 1 14-14h272a14 14 0 0 1 14 14v56l-150-30-150 30Z" fill="#C08D55"/>
+    <rect x="306" y="530" width="248" height="12" rx="6" fill="#6B2C1F" opacity=".18"/>
+    <rect x="610" y="450" width="250" height="210" rx="14" fill="#C08D55"/>
+    <rect x="610" y="450" width="250" height="50" rx="14" fill="#B07F49"/>
+    <rect x="634" y="486" width="202" height="12" rx="6" fill="#6B2C1F" opacity=".18"/>
+  </g>
+
+  <rect x="240" y="660" width="660" height="40" rx="12" fill="#8F6A3C"/>
+  <g stroke="#4A1F17" stroke-width="18" fill="none" stroke-linecap="round">
+    <path d="M240 180v530M240 710h620"/>
+    <path d="M240 220h80"/>
+  </g>
+  <circle cx="330" cy="770" r="50" fill="#4A1F17"/><circle cx="330" cy="770" r="18" fill="#C08D55"/>
+  <circle cx="810" cy="770" r="50" fill="#4A1F17"/><circle cx="810" cy="770" r="18" fill="#C08D55"/>
+</svg>

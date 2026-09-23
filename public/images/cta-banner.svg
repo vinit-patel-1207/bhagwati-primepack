@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" width="1600" height="700" role="img" aria-label="Sealed cartons and courier parcels grouped beside a potted plant">
+  <rect width="1600" height="700" fill="#F7EEDB"/>
+  <circle cx="1280" cy="170" r="280" fill="#C08D55" opacity=".12"/>
+  <ellipse cx="1020" cy="628" rx="560" ry="52" fill="#6B2C1F" opacity=".08"/>
+
+  <g>
+    <polygon points="600,180 600,620 940,620 940,180" fill="#C08D55"/>
+    <polygon points="940,180 1050,110 1050,550 940,620" fill="#A9763F"/>
+    <polygon points="600,180 710,110 1050,110 940,180" fill="#D8AB77"/>
+    <rect x="730" y="180" width="62" height="440" fill="#B07F49" opacity=".85"/>
+    <polygon points="730,180 840,110 902,110 792,180" fill="#C79A63" opacity=".9"/>
+  </g>
+  <g>
+    <polygon points="980,330 980,620 1210,620 1210,330" fill="#D8AB77"/>
+    <polygon points="1210,330 1280,286 1280,576 1210,620" fill="#C08D55"/>
+    <polygon points="980,330 1050,286 1280,286 1210,330" fill="#E3BC91"/>
+    <rect x="1080" y="330" width="44" height="290" fill="#C79A63"/>
+  </g>
+  <g>
+    <rect x="1250" y="290" width="220" height="330" rx="16" fill="#FFFFFF" stroke="#6B2C1F" stroke-opacity=".14" stroke-width="3"/>
+    <rect x="1250" y="290" width="220" height="50" rx="16" fill="#FCF8F0"/>
+    <rect x="1274" y="322" width="172" height="12" rx="6" fill="#C08D55" opacity=".7"/>
+    <rect x="1284" y="390" width="152" height="130" rx="10" fill="#F7EEDB"/>
+    <rect x="1308" y="418" width="104" height="12" rx="6" fill="#6B2C1F" opacity=".22"/>
+    <rect x="1308" y="450" width="76" height="12" rx="6" fill="#6B2C1F" opacity=".16"/>
+  </g>
+  <g>
+    <rect x="380" y="330" width="200" height="290" rx="16" fill="#4A1F17"/>
+    <rect x="380" y="330" width="200" height="50" rx="16" fill="#6B2C1F"/>
+    <rect x="404" y="362" width="152" height="12" rx="6" fill="#C08D55" opacity=".6"/>
+    <rect x="414" y="430" width="132" height="120" rx="8" fill="#F7EEDB" opacity=".18"/>
+  </g>
+  <g>
+    <ellipse cx="240" cy="612" rx="110" ry="38" fill="#A9763F"/>
+    <rect x="130" y="552" width="220" height="60" fill="#A9763F"/>
+    <ellipse cx="240" cy="552" rx="110" ry="38" fill="#C08D55"/>
+    <ellipse cx="240" cy="552" rx="38" ry="13" fill="#F7EEDB"/>
+  </g>
+  <g>
+    <path d="M1520 200c-48 12-76 50-76 106 48-6 76-44 76-106Z" fill="#7E8F72"/>
+    <path d="M1520 200c48 12 76 50 76 106-48-6-76-44-76-106Z" fill="#93A385"/>
+    <path d="M1520 290c-40 14-62 48-60 96 40-10 62-44 60-96Z" fill="#8B9C7E"/>
+    <path d="M1520 200v390" stroke="#7E8F72" stroke-width="7" fill="none"/>
+    <path d="M1452 500h136l-18 120h-100Z" fill="#C08D55"/>
+    <rect x="1444" y="484" width="152" height="28" rx="9" fill="#D8AB77"/>
+  </g>
+</svg>

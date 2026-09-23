@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="A white and a black poly courier bag standing side by side">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <circle cx="300" cy="180" r="260" fill="#C08D55" opacity=".10"/>
+  <circle cx="960" cy="760" r="240" fill="#6B2C1F" opacity=".06"/>
+  <ellipse cx="600" cy="730" rx="330" ry="40" fill="#6B2C1F" opacity=".09"/>
+  <g>
+    <rect x="600" y="230" width="250" height="470" rx="16" fill="#4A1F17"/>
+    <rect x="600" y="230" width="250" height="82" rx="16" fill="#6B2C1F"/>
+    <rect x="620" y="286" width="210" height="10" rx="5" fill="#C08D55" opacity=".55"/>
+    <rect x="636" y="380" width="178" height="120" rx="8" fill="#F7EEDB" opacity=".16"/>
+    <rect x="660" y="410" width="130" height="8" rx="4" fill="#F7EEDB" opacity=".35"/>
+    <rect x="660" y="436" width="98" height="8" rx="4" fill="#F7EEDB" opacity=".25"/>
+  </g>
+  <g>
+    <rect x="350" y="270" width="266" height="440" rx="16" fill="#FFFFFF" stroke="#6B2C1F" stroke-opacity=".14" stroke-width="3"/>
+    <rect x="350" y="270" width="266" height="80" rx="16" fill="#FCF8F0" stroke="#6B2C1F" stroke-opacity=".10" stroke-width="3"/>
+    <rect x="372" y="326" width="222" height="10" rx="5" fill="#C08D55" opacity=".7"/>
+    <rect x="388" y="410" width="190" height="132" rx="8" fill="#F7EEDB"/>
+    <rect x="412" y="442" width="142" height="9" rx="4.5" fill="#6B2C1F" opacity=".30"/>
+    <rect x="412" y="470" width="106" height="9" rx="4.5" fill="#6B2C1F" opacity=".20"/>
+    <rect x="412" y="498" width="124" height="9" rx="4.5" fill="#6B2C1F" opacity=".20"/>
+  </g>
+</svg>

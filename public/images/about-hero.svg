@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Stacked corrugated cartons and courier bags on a shelf beside a potted plant">
+  <rect width="1400" height="1000" fill="#F7EEDB"/>
+  <circle cx="1120" cy="220" r="280" fill="#C08D55" opacity=".10"/>
+  <rect x="120" y="760" width="1160" height="26" rx="8" fill="#C08D55" opacity=".55"/>
+  <ellipse cx="700" cy="800" rx="520" ry="46" fill="#6B2C1F" opacity=".07"/>
+
+  <g>
+    <polygon points="300,470 300,760 620,760 620,470" fill="#C08D55"/>
+    <polygon points="620,470 710,410 710,700 620,760" fill="#A9763F"/>
+    <polygon points="300,470 390,410 710,410 620,470" fill="#D8AB77"/>
+    <rect x="424" y="470" width="58" height="290" fill="#B07F49" opacity=".85"/>
+  </g>
+  <g>
+    <polygon points="340,290 340,470 580,470 580,290" fill="#D8AB77"/>
+    <polygon points="580,290 660,238 660,418 580,470" fill="#C08D55"/>
+    <polygon points="340,290 420,238 660,238 580,290" fill="#E3BC91"/>
+    <rect x="438" y="290" width="46" height="180" fill="#C79A63" opacity=".8"/>
+  </g>
+
+  <g>
+    <rect x="740" y="520" width="220" height="240" rx="14" fill="#FFFFFF" stroke="#6B2C1F" stroke-opacity=".14" stroke-width="3"/>
+    <rect x="740" y="520" width="220" height="48" rx="14" fill="#FCF8F0" stroke="#6B2C1F" stroke-opacity=".10" stroke-width="3"/>
+    <rect x="762" y="552" width="176" height="10" rx="5" fill="#C08D55" opacity=".7"/>
+    <rect x="774" y="612" width="152" height="96" rx="8" fill="#F7EEDB"/>
+    <rect x="794" y="636" width="110" height="9" rx="4.5" fill="#6B2C1F" opacity=".25"/>
+    <rect x="794" y="662" width="80" height="9" rx="4.5" fill="#6B2C1F" opacity=".18"/>
+  </g>
+  <g>
+    <rect x="980" y="560" width="190" height="200" rx="14" fill="#4A1F17"/>
+    <rect x="980" y="560" width="190" height="44" rx="14" fill="#6B2C1F"/>
+    <rect x="1002" y="590" width="146" height="10" rx="5" fill="#C08D55" opacity=".6"/>
+  </g>
+
+  <g>
+    <path d="M1230 380c-50 12-80 52-80 108 50-6 80-44 80-108Z" fill="#7E8F72"/>
+    <path d="M1230 380c50 12 80 52 80 108-50-6-80-44-80-108Z" fill="#93A385"/>
+    <path d="M1230 460c-42 14-64 50-62 98 42-10 64-44 62-98Z" fill="#8B9C7E"/>
+    <path d="M1230 380v380" stroke="#7E8F72" stroke-width="7" fill="none"/>
+    <path d="M1152 640h156l-18 120h-120Z" fill="#C08D55"/>
+    <rect x="1144" y="624" width="172" height="28" rx="9" fill="#D8AB77"/>
+  </g>
+
+  <g>
+    <ellipse cx="200" cy="740" rx="96" ry="34" fill="#A9763F"/>
+    <rect x="104" y="684" width="192" height="56" fill="#A9763F"/>
+    <ellipse cx="200" cy="684" rx="96" ry="34" fill="#C08D55"/>
+    <ellipse cx="200" cy="684" rx="34" ry="12" fill="#F7EEDB"/>
+  </g>
+</svg>

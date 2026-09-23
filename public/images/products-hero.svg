@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Poly courier bags, kraft mailers and cartons grouped beside a plant">
+  <rect width="1400" height="1000" fill="#F7EEDB"/>
+  <circle cx="260" cy="230" r="290" fill="#C08D55" opacity=".10"/>
+  <circle cx="1140" cy="760" r="240" fill="#6B2C1F" opacity=".05"/>
+  <ellipse cx="700" cy="840" rx="540" ry="56" fill="#6B2C1F" opacity=".08"/>
+
+  <g>
+    <polygon points="200,440 200,800 500,800 500,440" fill="#C08D55"/>
+    <polygon points="500,440 590,382 590,742 500,800" fill="#A9763F"/>
+    <polygon points="200,440 290,382 590,382 500,440" fill="#D8AB77"/>
+    <rect x="316" y="440" width="56" height="360" fill="#B07F49" opacity=".85"/>
+  </g>
+
+  <g>
+    <rect x="540" y="430" width="250" height="370" rx="16" fill="#FFFFFF" stroke="#6B2C1F" stroke-opacity=".14" stroke-width="3"/>
+    <rect x="540" y="430" width="250" height="56" rx="16" fill="#FCF8F0" stroke="#6B2C1F" stroke-opacity=".10" stroke-width="3"/>
+    <rect x="564" y="468" width="202" height="10" rx="5" fill="#C08D55" opacity=".7"/>
+    <rect x="576" y="546" width="178" height="130" rx="8" fill="#F7EEDB"/>
+    <g fill="#4A1F17" opacity=".7">
+      <rect x="594" y="570" width="5" height="42"/><rect x="606" y="570" width="3" height="42"/>
+      <rect x="616" y="570" width="7" height="42"/><rect x="630" y="570" width="3" height="42"/>
+      <rect x="640" y="570" width="5" height="42"/><rect x="652" y="570" width="8" height="42"/>
+      <rect x="667" y="570" width="3" height="42"/><rect x="676" y="570" width="6" height="42"/>
+    </g>
+    <rect x="594" y="628" width="126" height="9" rx="4.5" fill="#6B2C1F" opacity=".22"/>
+  </g>
+
+  <g transform="rotate(6 900 640)">
+    <rect x="800" y="470" width="220" height="330" rx="14" fill="#C08D55"/>
+    <path d="M800 484a14 14 0 0 1 14-14h192a14 14 0 0 1 14 14v52l-110-26-110 26Z" fill="#B07F49"/>
+    <rect x="824" y="556" width="172" height="10" rx="5" fill="#6B2C1F" opacity=".18"/>
+  </g>
+
+  <g>
+    <rect x="1010" y="540" width="190" height="260" rx="14" fill="#4A1F17"/>
+    <rect x="1010" y="540" width="190" height="46" rx="14" fill="#6B2C1F"/>
+    <rect x="1032" y="572" width="146" height="10" rx="5" fill="#C08D55" opacity=".6"/>
+    <rect x="1042" y="638" width="126" height="90" rx="8" fill="#F7EEDB" opacity=".18"/>
+  </g>
+
+  <g>
+    <path d="M1220 300c-48 12-76 50-76 104 48-6 76-42 76-104Z" fill="#7E8F72"/>
+    <path d="M1220 300c48 12 76 50 76 104-48-6-76-42-76-104Z" fill="#93A385"/>
+    <path d="M1220 378c-40 14-60 48-58 94 40-10 60-42 58-94Z" fill="#8B9C7E"/>
+    <path d="M1220 300v500" stroke="#7E8F72" stroke-width="7" fill="none"/>
+  </g>
+
+  <g>
+    <ellipse cx="300" cy="836" rx="104" ry="36" fill="#A9763F"/>
+    <rect x="196" y="776" width="208" height="60" fill="#A9763F"/>
+    <ellipse cx="300" cy="776" rx="104" ry="36" fill="#C08D55"/>
+    <ellipse cx="300" cy="776" rx="36" ry="13" fill="#F7EEDB"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Cartons and courier parcels stacked on pallets beside a loading bay door">
+  <rect width="1200" height="900" fill="#F7EEDB"/>
+  <rect width="1200" height="380" fill="#FCF8F0"/>
+  <g>
+    <rect x="700" y="90" width="460" height="450" rx="14" fill="#D9C7A8"/>
+    <rect x="730" y="120" width="400" height="390" rx="8" fill="#E7DAC2"/>
+    <g stroke="#C9B695" stroke-width="10">
+      <path d="M730 200h400M730 280h400M730 360h400M730 440h400"/>
+    </g>
+  </g>
+  <circle cx="230" cy="210" r="210" fill="#C08D55" opacity=".11"/>
+  <ellipse cx="600" cy="830" rx="470" ry="46" fill="#6B2C1F" opacity=".07"/>
+
+  <g>
+    <rect x="150" y="250" width="340" height="170" fill="#D8AB77"/>
+    <rect x="150" y="250" width="340" height="170" fill="none" stroke="#6B2C1F" stroke-opacity=".12" stroke-width="3"/>
+    <rect x="302" y="250" width="36" height="170" fill="#C79A63"/>
+    <rect x="120" y="420" width="400" height="200" fill="#C08D55"/>
+    <rect x="120" y="420" width="400" height="200" fill="none" stroke="#6B2C1F" stroke-opacity=".12" stroke-width="3"/>
+    <rect x="300" y="420" width="40" height="200" fill="#B07F49"/>
+    <rect x="90" y="620" width="460" height="64" fill="#B07F49"/>
+    <g fill="#A9763F">
+      <rect x="110" y="684" width="80" height="46"/>
+      <rect x="280" y="684" width="80" height="46"/>
+      <rect x="450" y="684" width="80" height="46"/>
+    </g>
+  </g>
+  <g>
+    <rect x="620" y="380" width="280" height="240" fill="#D8AB77"/>
+    <rect x="620" y="380" width="280" height="240" fill="none" stroke="#6B2C1F" stroke-opacity=".12" stroke-width="3"/>
+    <rect x="744" y="380" width="34" height="240" fill="#C79A63"/>
+    <rect x="590" y="620" width="340" height="64" fill="#B07F49"/>
+    <g fill="#A9763F">
+      <rect x="610" y="684" width="70" height="46"/>
+      <rect x="840" y="684" width="70" height="46"/>
+    </g>
+  </g>
+  <g>
+    <rect x="950" y="430" width="200" height="250" rx="14" fill="#4A1F17"/>
+    <rect x="950" y="430" width="200" height="48" rx="14" fill="#6B2C1F"/>
+    <rect x="974" y="462" width="152" height="12" rx="6" fill="#C08D55" opacity=".55"/>
+    <rect x="984" y="530" width="132" height="110" rx="8" fill="#F7EEDB" opacity=".18"/>
+  </g>
+</svg>
