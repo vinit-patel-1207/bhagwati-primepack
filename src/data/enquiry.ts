@@ -1,7 +1,6 @@
 // Contact-form delivery. Two channels, one shared body:
 //   email    → Web3Forms (no backend needed on a static site)
 //   whatsapp → wa.me deep link built from the same text (see whatsapp.ts)
-// Explicit .ts extensions so the sibling *.test.ts runs under bare node.
 
 const ENDPOINT = 'https://api.web3forms.com/submit'
 
@@ -10,8 +9,9 @@ export type Enquiry = {
   company: string
   email: string
   phone: string
-  /** Display name, not the slug. */
-  product: string
+  /** Display names, not slugs. */
+  category: string
+  product?: string
   quantity?: string
   message: string
 }
@@ -23,6 +23,7 @@ export function enquiryText(e: Enquiry): string {
     ['Company', e.company],
     ['Email', e.email],
     ['Phone', e.phone],
+    ['Category', e.category],
     ['Product', e.product],
     ['Quantity', e.quantity],
   ]
@@ -38,20 +39,16 @@ export function enquiryText(e: Enquiry): string {
  * with the access key. Throws on transport failure or a rejected submission so
  * the form can keep the visitor's input and offer the fallbacks.
  */
-export async function sendEnquiry(
-  e: Enquiry,
-  // Injectable so the test can run outside Vite (import.meta.env is per-module).
-  accessKey = import.meta.env?.WEB3FORMS_KEY,
-  fetchImpl: typeof fetch = fetch,
-): Promise<void> {
+export async function sendEnquiry(e: Enquiry): Promise<void> {
+  const accessKey = import.meta.env.WEB3FORMS_KEY
   if (!accessKey) throw new Error('form is not configured')
 
-  const res = await fetchImpl(ENDPOINT, {
+  const res = await fetch(ENDPOINT, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify({
       access_key: accessKey,
-      subject: `New enquiry — ${e.product} — ${e.name}`,
+      subject: `New enquiry — ${e.product || e.category} — ${e.name}`,
       from_name: e.name,
       replyto: e.email,
       message: enquiryText(e),

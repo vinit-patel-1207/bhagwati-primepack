@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion'
 import type { ReactNode } from 'react'
 
+// Trigger as soon as any part is on screen (minus a small bottom inset). A ratio like
+// `amount: 0.15` never fires for a single-column grid taller than ~6 screens, which
+// left the mobile catalogue permanently invisible.
+const viewport = { once: true, margin: '0px 0px -60px 0px' } as const
+
 /** Scroll-in fade + lift. Honours prefers-reduced-motion via the global CSS override. */
 export function Reveal({
   children,
@@ -19,7 +24,7 @@ export function Reveal({
       className={className}
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={viewport}
       transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
@@ -34,7 +39,7 @@ export function RevealGroup({ children, className }: { children: ReactNode; clas
       className={className}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={viewport}
       variants={{ hidden: {}, show: { transition: { staggerChildren: 0.07 } } }}
     >
       {children}

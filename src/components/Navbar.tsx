@@ -1,18 +1,14 @@
-import { useEffect, useId, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ChevronDown, Menu, Search, X } from 'lucide-react'
+import { Menu, Search, X } from 'lucide-react'
 import { Logo } from './Logo'
 import { ButtonLink } from './ui/Button'
 import { nav } from '@/data/site'
-import { products } from '@/data/products'
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [megaOpen, setMegaOpen] = useState(false)
-  const megaRef = useRef<HTMLDivElement>(null)
-  const megaId = useId()
   const { pathname } = useLocation()
 
   useEffect(() => {
@@ -22,30 +18,14 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Close both menus whenever the route changes, including on back/forward.
+  // Close the menu whenever the route changes, including on back/forward.
   // Adjusted during render rather than in an effect, so the menus never paint open
   // on the new page. See react.dev "Adjusting state when a prop changes".
   const [lastPath, setLastPath] = useState(pathname)
   if (lastPath !== pathname) {
     setLastPath(pathname)
     setMobileOpen(false)
-    setMegaOpen(false)
   }
-
-  // Close the mega menu on Escape or a click outside it.
-  useEffect(() => {
-    if (!megaOpen) return
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setMegaOpen(false)
-    const onClick = (e: MouseEvent) => {
-      if (megaRef.current && !megaRef.current.contains(e.target as Node)) setMegaOpen(false)
-    }
-    document.addEventListener('keydown', onKey)
-    document.addEventListener('mousedown', onClick)
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.removeEventListener('mousedown', onClick)
-    }
-  }, [megaOpen])
 
   // Drawer: Escape closes it, and the page behind does not scroll while it is open.
   useEffect(() => {
@@ -81,77 +61,11 @@ export function Navbar() {
           </Link>
 
           <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
-            {nav.map((item) =>
-              item.label === 'Products' ? (
-                <div key={item.to} ref={megaRef} className="relative">
-                  <button
-                    type="button"
-                    className={`flex items-center gap-1 py-2 text-sm font-medium transition-colors ${
-                      pathname.startsWith('/products')
-                        ? 'text-maroon'
-                        : 'text-ink hover:text-maroon'
-                    }`}
-                    aria-expanded={megaOpen}
-                    aria-controls={megaId}
-                    onClick={() => setMegaOpen((v) => !v)}
-                  >
-                    Products
-                    <ChevronDown
-                      className={`h-4 w-4 transition-transform ${megaOpen ? 'rotate-180' : ''}`}
-                      aria-hidden="true"
-                    />
-                  </button>
-
-                  <AnimatePresence>
-                    {megaOpen && (
-                      <motion.div
-                        id={megaId}
-                        initial={{ opacity: 0, y: 8 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 8 }}
-                        transition={{ duration: 0.18 }}
-                        className="rounded-card border-maroon/10 absolute top-full left-1/2 z-50 mt-3 w-[620px] -translate-x-1/2 border bg-white p-5 shadow-[0_18px_50px_rgba(75,64,58,0.16)]"
-                      >
-                        <p className="eyebrow mb-3">Product Categories</p>
-                        <ul className="grid grid-cols-2 gap-x-6 gap-y-1">
-                          {products.map((p) => {
-                            const Icon = p.icon
-                            return (
-                              <li key={p.slug}>
-                                <Link
-                                  to={`/products?category=${p.slug}`}
-                                  className="hover:bg-cream flex items-start gap-3 rounded-lg p-2.5 transition-colors"
-                                >
-                                  <Icon
-                                    className="text-maroon mt-0.5 h-4 w-4 shrink-0"
-                                    strokeWidth={1.6}
-                                    aria-hidden="true"
-                                  />
-                                  <span>
-                                    <span className="block text-sm font-medium">{p.name}</span>
-                                    <span className="text-muted block text-xs">{p.short}</span>
-                                  </span>
-                                </Link>
-                              </li>
-                            )
-                          })}
-                        </ul>
-                        <div className="border-maroon/10 mt-4 flex items-center justify-between border-t pt-4">
-                          <p className="text-muted text-xs">Need something made to size?</p>
-                          <ButtonLink to="/contact" size="sm">
-                            Get a Quote
-                          </ButtonLink>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              ) : (
-                <NavLink key={item.to} to={item.to} end={item.to === '/'} className={linkClass}>
-                  {item.label}
-                </NavLink>
-              ),
-            )}
+            {nav.map((item) => (
+              <NavLink key={item.to} to={item.to} end={item.to === '/'} className={linkClass}>
+                {item.label}
+              </NavLink>
+            ))}
           </nav>
 
           <div className="flex items-center gap-2">

@@ -138,7 +138,7 @@ function Detail({ item }: { item: CatalogItem }) {
           <div className="mt-8 flex flex-wrap gap-3">
             <WhatsAppQuote item={item} big />
             <Link
-              to={`/contact?product=${item.category}`}
+              to={`/contact?category=${item.category}&product=${item.slug}`}
               className="border-maroon/30 text-maroon hover:bg-maroon hover:text-cream inline-flex items-center rounded-full border px-6 py-3 text-base font-semibold transition-colors"
             >
               Request quote by email
@@ -213,7 +213,10 @@ function Detail({ item }: { item: CatalogItem }) {
       <CtaSection
         title="Need a size that isn't listed?"
         body={`Send ${site.name} your dimensions, material and volume — we will come back with options, samples and a price.`}
-        primary={{ label: 'Request a Quote', to: `/contact?product=${item.category}` }}
+        primary={{
+          label: 'Request a Quote',
+          to: `/contact?category=${item.category}&product=${item.slug}`,
+        }}
         secondary={{ label: 'All Products', to: '/products' }}
       />
     </>

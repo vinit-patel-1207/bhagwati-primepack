@@ -1,10 +1,11 @@
 import { useId, useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, useWatch } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { CircleAlert, CircleCheck, LoaderCircle, Send } from 'lucide-react'
 import { useSearchParams } from 'react-router-dom'
-import { products } from '@/data/products'
+import { productBySlug, products } from '@/data/products'
+import { catalog, catalogBySlug } from '@/data/catalog'
 import { site } from '@/data/site'
 import { enquiryText, sendEnquiry, type Enquiry } from '@/data/enquiry'
 import { whatsappLink } from '@/data/whatsapp'
@@ -19,7 +20,8 @@ const schema = z.object({
     .string()
     .trim()
     .regex(/^[+\d][\d\s-]{7,17}$/, 'Please enter a valid phone number.'),
-  product: z.string().min(1, 'Please select a product requirement.'),
+  category: z.string().min(1, 'Please select a category.'),
+  product: z.string().optional(),
   quantity: z.string().trim().optional(),
   message: z.string().trim().min(10, 'Please tell us a little more (10 characters minimum).'),
   // Honeypot — bots fill hidden fields, humans do not.
@@ -30,7 +32,9 @@ export type EnquiryValues = z.infer<typeof schema>
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
-// Swap the product slug for its display name so the email/WhatsApp body reads well.
+const MULTIPLE = 'multiple'
+
+// Swap slugs for display names so the email/WhatsApp body reads well.
 const toEnquiry = (v: EnquiryValues): Enquiry => ({
   name: v.name,
   company: v.company,
@@ -38,11 +42,22 @@ const toEnquiry = (v: EnquiryValues): Enquiry => ({
   phone: v.phone,
   quantity: v.quantity,
   message: v.message,
-  product:
-    v.product === 'multiple'
+  category:
+    v.category === MULTIPLE
       ? 'Multiple / not sure yet'
-      : (products.find((p) => p.slug === v.product)?.name ?? v.product),
+      : (productBySlug(v.category)?.name ?? v.category),
+  product: v.product ? (catalogBySlug(v.product)?.name ?? v.product) : undefined,
 })
+
+/** Pre-fill from links like /contact?category=bubble-packaging&product=bubble-pouches. */
+function initialSelection(params: URLSearchParams) {
+  const product = catalogBySlug(params.get('product') ?? '')
+  const category = params.get('category') ?? product?.category ?? ''
+  return {
+    category: productBySlug(category) ? category : '',
+    product: product && product.category === category ? product.slug : '',
+  }
+}
 
 export function ContactForm() {
   const [params] = useSearchParams()
@@ -56,11 +71,17 @@ export function ContactForm() {
     register,
     handleSubmit,
     reset,
+    control,
+    setValue,
     formState: { errors },
   } = useForm<EnquiryValues>({
     resolver: zodResolver(schema),
-    defaultValues: { product: params.get('product') ?? '', website: '' },
+    defaultValues: { ...initialSelection(params), website: '' },
   })
+
+  // Product list follows the chosen category.
+  const category = useWatch({ control, name: 'category' })
+  const productOptions = catalog.filter((c) => c.category === category)
 
   const onSubmit = async (values: EnquiryValues) => {
     if (values.website) return // honeypot tripped, drop silently
@@ -70,7 +91,7 @@ export function ContactForm() {
     try {
       await sendEnquiry(enquiry)
       setStatus('sent')
-      reset({ product: '', website: '' })
+      reset({ category: '', product: '', website: '' })
     } catch (err) {
       // Keep the filled form so nothing is lost; the banner offers WhatsApp and email instead.
       setSendError(err instanceof Error ? err.message : 'unknown error')
@@ -160,38 +181,54 @@ export function ContactForm() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field
-          label="Product Requirement"
-          required
-          error={errors.product?.message}
-          id={`${formId}-product`}
-        >
+        <Field label="Category" required error={errors.category?.message} id={`${formId}-category`}>
           <select
-            id={`${formId}-product`}
-            aria-invalid={!!errors.product}
+            id={`${formId}-category`}
+            aria-invalid={!!errors.category}
             className={inputCls}
-            {...register('product')}
+            {...register('category', {
+              // A product from the previous category would no longer match.
+              onChange: () => setValue('product', ''),
+            })}
           >
-            <option value="">Select product</option>
+            <option value="">Select category</option>
             {products.map((p) => (
               <option key={p.slug} value={p.slug}>
                 {p.name}
               </option>
             ))}
-            <option value="multiple">Multiple / not sure yet</option>
+            <option value={MULTIPLE}>Multiple / not sure yet</option>
           </select>
         </Field>
 
-        <Field label="Approximate Quantity" id={`${formId}-qty`}>
-          <input
-            id={`${formId}-qty`}
-            type="text"
-            placeholder="e.g. 5,000 pcs per month"
-            className={inputCls}
-            {...register('quantity')}
-          />
+        <Field label="Product" id={`${formId}-product`}>
+          <select
+            id={`${formId}-product`}
+            disabled={productOptions.length === 0}
+            className={`${inputCls} disabled:opacity-60`}
+            {...register('product')}
+          >
+            <option value="">
+              {productOptions.length ? 'Any / not sure yet' : 'Choose a category first'}
+            </option>
+            {productOptions.map((c) => (
+              <option key={c.slug} value={c.slug}>
+                {c.name}
+              </option>
+            ))}
+          </select>
         </Field>
       </div>
+
+      <Field label="Approximate Quantity" id={`${formId}-qty`}>
+        <input
+          id={`${formId}-qty`}
+          type="text"
+          placeholder="e.g. 5,000 pcs per month"
+          className={inputCls}
+          {...register('quantity')}
+        />
+      </Field>
 
       <Field label="Message" required error={errors.message?.message} id={`${formId}-message`}>
         <textarea

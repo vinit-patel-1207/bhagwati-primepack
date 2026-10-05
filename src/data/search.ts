@@ -1,25 +1,7 @@
-import type { Product } from './products'
 import type { CatalogItem } from './catalog'
 
-/** Filters the catalogue by free-text query and an optional pinned category slug. */
-export function filterProducts(
-  all: readonly Product[],
-  query: string,
-  activeSlug: string | null,
-): Product[] {
-  const q = query.trim().toLowerCase()
-  return all.filter((p) => {
-    if (activeSlug && p.slug !== activeSlug) return false
-    if (!q) return true
-    return (
-      p.name.toLowerCase().includes(q) ||
-      p.short.toLowerCase().includes(q) ||
-      p.description.toLowerCase().includes(q) ||
-      p.specs.some((s) => s.toLowerCase().includes(q)) ||
-      p.bestFor.some((b) => b.toLowerCase().includes(q))
-    )
-  })
-}
+// "10x12", "10 × 12" and "10X12" should all find the same size row.
+const norm = (s: string) => s.toLowerCase().replace(/×/g, 'x').replace(/\s+/g, '')
 
 /** Same idea for catalogue items: free text over name, copy, specs and size rows. */
 export function filterCatalog(
@@ -27,7 +9,7 @@ export function filterCatalog(
   query: string,
   category: string | null,
 ): CatalogItem[] {
-  const q = query.trim().toLowerCase()
+  const q = norm(query)
   return all.filter((c) => {
     if (category && c.category !== category) return false
     if (!q) return true
@@ -38,6 +20,6 @@ export function filterCatalog(
       ...c.features,
       ...c.specs.map((s) => s.value),
       ...c.sizes.flatMap((s) => [s.code, s.size, s.variant]),
-    ].some((t) => t?.toLowerCase().includes(q))
+    ].some((t) => t && norm(t).includes(q))
   })
 }

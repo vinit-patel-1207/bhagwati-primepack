@@ -71,3 +71,14 @@
 .skip-link {
   @apply focus:bg-maroon focus:text-cream sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-md focus:px-4 focus:py-2;
 }
+
+/* Every <select>: replace the native arrow (which hugs the edge) with an inset chevron.
+   Unlayered on purpose so it outranks the px-* utilities on each select. */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b2c1f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 1rem;
+  padding-right: 2.6rem;
+}
