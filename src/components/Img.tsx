@@ -16,6 +16,7 @@ export function Img({
   fallback,
   loading = 'lazy',
   sizes,
+  fit = 'cover',
 }: {
   src: string
   alt: string
@@ -24,6 +25,7 @@ export function Img({
   fallback: ReactNode
   loading?: 'lazy' | 'eager'
   sizes?: string
+  fit?: 'cover' | 'contain'
 }) {
   const [failed, setFailed] = useState(false)
 
@@ -37,7 +39,7 @@ export function Img({
       loading={loading}
       decoding="async"
       onError={() => setFailed(true)}
-      className={`${className} ${imgClassName} object-cover`}
+      className={`${className} ${imgClassName} ${fit === 'contain' ? 'object-contain' : 'object-cover'}`}
     />
   )
 }

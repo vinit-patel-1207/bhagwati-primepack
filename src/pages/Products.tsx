@@ -1,31 +1,35 @@
 import { useId, useMemo, useState } from 'react'
 import { ArrowRight, Search } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { Seo } from '@/components/Seo'
 import { PageHero } from '@/components/PageHero'
-import { ProductCard } from '@/components/ProductCard'
+import { CatalogCard } from '@/components/CatalogCard'
 import { RevealGroup } from '@/components/ui/Reveal'
 import { CtaSection } from '@/components/CtaSection'
 import { products } from '@/data/products'
-import { filterProducts } from '@/data/search'
+import { catalog } from '@/data/catalog'
+import { filterCatalog } from '@/data/search'
 import { img } from '@/data/images'
 import { site } from '@/data/site'
 
-const PER_PAGE = 6
+const PER_PAGE = 12
+
+const countFor = (slug: string) => catalog.filter((c) => c.category === slug).length
 
 export default function Products() {
   // `draft` is what is typed; `query` is what has been submitted via Search.
   const [draft, setDraft] = useState('')
   const [query, setQuery] = useState('')
-  const [category, setCategory] = useState('')
+  // Category lives in the URL so nav/footer links and shares land pre-filtered.
+  const [params, setParams] = useSearchParams()
+  const category = params.get('category') ?? ''
+  const setCategory = (slug: string) =>
+    setParams(slug ? { category: slug } : {}, { replace: true, preventScrollReset: true })
   const [page, setPage] = useState(1)
   const searchId = useId()
   const categoryId = useId()
 
-  const results = useMemo(
-    () => filterProducts(products, query, category || null),
-    [query, category],
-  )
+  const results = useMemo(() => filterCatalog(catalog, query, category || null), [query, category])
 
   const pageCount = Math.max(1, Math.ceil(results.length / PER_PAGE))
 
@@ -127,7 +131,7 @@ export default function Products() {
                   setPage(1)
                 }}
               >
-                All Products
+                All Products ({catalog.length})
               </CategoryLink>
             </li>
             {products.map((p) => {
@@ -146,7 +150,8 @@ export default function Products() {
                       </span>
                     }
                   >
-                    {p.name}
+                    <span className="flex-1">{p.name}</span>
+                    <span className="text-muted text-xs">{countFor(p.slug)}</span>
                   </CategoryLink>
                 </li>
               )
@@ -176,10 +181,8 @@ export default function Products() {
                 key={`${query}-${category}-${current}`}
                 className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3"
               >
-                {visible.map((p) => (
-                  <div key={p.slug} id={p.slug} className="scroll-mt-24">
-                    <ProductCard product={p} action="quote" />
-                  </div>
+                {visible.map((c) => (
+                  <CatalogCard key={c.slug} item={c} />
                 ))}
               </RevealGroup>
 
@@ -190,7 +193,10 @@ export default function Products() {
                       <li key={n}>
                         <button
                           type="button"
-                          onClick={() => setPage(n)}
+                          onClick={() => {
+                            setPage(n)
+                            window.scrollTo({ top: 0, behavior: 'smooth' })
+                          }}
                           aria-current={n === current ? 'page' : undefined}
                           aria-label={`Page ${n}`}
                           className={`grid h-9 w-9 place-items-center rounded-full border text-sm transition-colors ${

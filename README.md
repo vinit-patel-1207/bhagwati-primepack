@@ -79,9 +79,12 @@ replace the paths in that one file.
 2. **Contact details** — `src/data/site.ts` carries placeholder phone, email and address taken
    from the comp. Replace them with the client's verified details; they feed the header, footer,
    contact page, WhatsApp button and the `Organization` JSON-LD.
-3. **Form endpoint** — the form POSTs JSON to `VITE_ENQUIRY_ENDPOINT`. Create a `.env.local`
-   with e.g. `VITE_ENQUIRY_ENDPOINT=https://formspree.io/f/xxxx`. Until it is set, the form
-   validates correctly but shows its error state on submit.
+3. **Contact form email** — enquiries are emailed via [Web3Forms](https://web3forms.com)
+   (`src/data/enquiry.ts`), no backend needed. Create a free access key at web3forms.com using
+   `bhagwatiprimepack@gmail.com` (mail goes to whichever inbox owns the key), then set
+   `VITE_WEB3FORMS_KEY=<key>` in `.env.local` for dev and in Vercel → Settings → Environment
+   Variables for production (redeploy after adding). The key is public by design. Until it is set,
+   submitting shows an error with WhatsApp and email fallbacks pre-filled with the enquiry.
 4. **Terms & Conditions** — `/terms` is a stub pending the client's trading terms. `/privacy-policy`
    describes what the site actually does but should still be reviewed before launch.
 5. **Domain** — `site.url` in `src/data/site.ts`, plus `public/sitemap.xml` and

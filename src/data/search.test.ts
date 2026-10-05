@@ -1,6 +1,7 @@
 import { strict as assert } from 'node:assert'
 import test from 'node:test'
-import { filterProducts } from './search.ts'
+import { filterProducts, filterCatalog } from './search.ts'
+import { catalog } from './catalog.ts'
 import { products } from './products.ts'
 import { industries } from './industries.ts'
 
@@ -45,4 +46,12 @@ test('every industry recommendation points at a real product slug', () => {
       assert.ok(slugs.has(rec), `${industry.slug} recommends unknown product "${rec}"`)
     }
   }
+})
+
+test('catalogue search matches size codes and narrows by category', () => {
+  const hits = filterCatalog(catalog, 'mpp2', null).map((c) => c.slug)
+  assert.deepEqual(hits, ['myntra-barcode-poly-bags'])
+  const tapes = filterCatalog(catalog, '', 'packaging-tapes')
+  assert.ok(tapes.length > 1 && tapes.every((c) => c.category === 'packaging-tapes'))
+  assert.equal(filterCatalog(catalog, 'zzz-nothing', null).length, 0)
 })

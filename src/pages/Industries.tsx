@@ -89,7 +89,7 @@ export default function Industries() {
                     return (
                       <li key={slug}>
                         <Link
-                          to={`/products#${slug}`}
+                          to={`/products?category=${slug}`}
                           className="group bg-cream-light flex items-center justify-between gap-3 rounded-lg px-3.5 py-2.5 text-sm font-medium transition-colors hover:bg-white"
                         >
                           {product.name}

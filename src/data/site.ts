@@ -6,11 +6,11 @@ export const site = {
   description:
     'Bhagwati Primepack supplies courier bags, tamper evident packaging, bubble mailers, kraft and corrugated packaging, tapes and labels to businesses across e-commerce, retail, FMCG, pharma and logistics.',
   url: 'https://www.bhagwatiprimepack.in',
-  // TODO: replace with the client's verified details before launch.
-  phone: '+91 88237 84265',
-  phoneHref: '+918823784265',
-  whatsapp: '918823784265',
-  email: 'info@bhagwatiprimepack.in',
+  // TODO: address and hours still need the client's verified details.
+  phone: '+91 82003 66990',
+  phoneHref: '+918200366990',
+  whatsapp: '918200366990',
+  email: 'bhagwatiprimepack@gmail.com',
   address: {
     line1: 'Shed No. 24, Vinayak Industrial Estate',
     line2: 'Ahmedabad, Gujarat 382430',

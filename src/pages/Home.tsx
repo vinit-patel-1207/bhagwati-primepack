@@ -5,6 +5,7 @@ import { ButtonLink } from '@/components/ui/Button'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Reveal, RevealGroup, revealItem } from '@/components/ui/Reveal'
 import { ProductCard } from '@/components/ProductCard'
+import { CatalogCard } from '@/components/CatalogCard'
 import { IndustryTile } from '@/components/IndustryCard'
 import { CtaSection } from '@/components/CtaSection'
 import { Faq, faqSchema } from '@/components/Faq'
@@ -12,9 +13,18 @@ import { Img, PhotoPlaceholder } from '@/components/Img'
 import { BadgeSeal } from '@/components/BadgeSeal'
 import { BotanicalWatermark } from '@/components/PageHero'
 import { products } from '@/data/products'
+import { catalogBySlug } from '@/data/catalog'
 import { industries } from '@/data/industries'
 import { img } from '@/data/images'
 import { faqs, site, valueProps } from '@/data/site'
+
+// Home page "Key Products" — swap slugs from src/data/catalog.ts to feature others.
+const keyProducts = [
+  'plain-courier-bags-with-pod',
+  'bubble-courier-bags-with-pod',
+  'kraft-paper-courier-bags',
+  'corrugated-carton-boxes',
+].flatMap((slug) => catalogBySlug(slug) ?? [])
 
 const valueIcons = [Award, Truck, Package, Handshake]
 
@@ -44,6 +54,23 @@ export default function Home() {
       <Hero />
       <ValueStrip />
 
+      <section className="container-page border-maroon/10 border-t py-14">
+        <SectionHeading
+          title="Bestseller Products"
+          subtitle="Our most-ordered lines — open any one for the full size chart"
+          action={
+            <ButtonLink to="/products" variant="ghost" size="sm">
+              View All Products →
+            </ButtonLink>
+          }
+        />
+        <RevealGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {keyProducts.map((c) => (
+            <CatalogCard key={c.slug} item={c} />
+          ))}
+        </RevealGroup>
+      </section>
+      
       <section className="container-page py-14">
         <SectionHeading
           title="Our Product Categories"
@@ -129,7 +156,7 @@ function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="eyebrow mb-3">Premium Packaging Solutions</p>
           <h1 className="text-4xl leading-[1.1] font-bold sm:text-5xl">
@@ -156,8 +183,9 @@ function Hero() {
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative"
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          // Image leads when stacked on small screens; desktop keeps copy left, image right.
+          className="relative order-first lg:order-0"
         >
           <div className="aspect-[4/3] overflow-hidden rounded-2xl">
             <Img

@@ -2,7 +2,6 @@ import { Suspense, useEffect } from 'react'
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
-import { WhatsAppFab } from './WhatsAppFab'
 
 function HashFocus() {
   const { hash } = useLocation()
@@ -27,7 +26,6 @@ export function Layout() {
         </Suspense>
       </main>
       <Footer />
-      <WhatsAppFab />
       <ScrollRestoration />
       <HashFocus />
     </div>

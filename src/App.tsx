@@ -6,6 +6,7 @@ import Home from '@/pages/Home'
 // Home ships in the main bundle; every other route is split.
 const About = lazy(() => import('@/pages/About'))
 const Products = lazy(() => import('@/pages/Products'))
+const ProductDetail = lazy(() => import('@/pages/ProductDetail'))
 const Industries = lazy(() => import('@/pages/Industries'))
 const Contact = lazy(() => import('@/pages/Contact'))
 const NotFound = lazy(() => import('@/pages/NotFound'))
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/about', element: <About /> },
       { path: '/products', element: <Products /> },
+      { path: '/products/:slug', element: <ProductDetail /> },
       { path: '/industries', element: <Industries /> },
       { path: '/contact', element: <Contact /> },
       { path: '/privacy-policy', element: <PrivacyPolicy /> },
