@@ -41,7 +41,7 @@ export function enquiryText(e: Enquiry): string {
 export async function sendEnquiry(
   e: Enquiry,
   // Injectable so the test can run outside Vite (import.meta.env is per-module).
-  accessKey = import.meta.env?.VITE_WEB3FORMS_KEY,
+  accessKey = import.meta.env?.WEB3FORMS_KEY,
   fetchImpl: typeof fetch = fetch,
 ): Promise<void> {
   if (!accessKey) throw new Error('form is not configured')
