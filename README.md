@@ -18,7 +18,6 @@ npm install
 npm run dev           # http://localhost:5173
 npm run build         # typecheck + production build to dist/
 npm run preview       # serve the production build
-npm run test          # node:test — catalogue search + data integrity
 npm run lint          # oxlint
 npm run format        # prettier --write .
 npm run check:images  # list photo slots that still have no file
