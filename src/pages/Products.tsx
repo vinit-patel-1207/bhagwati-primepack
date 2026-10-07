@@ -15,11 +15,12 @@ import { site } from '@/data/site'
 const countFor = (slug: string) => catalog.filter((c) => c.category === slug).length
 
 export default function Products() {
+  // Marketplace links on the homepage prefill this search from the URL.
+  const [params, setParams] = useSearchParams()
   // Live search: results follow the box as you type (deferred so typing stays smooth).
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState(() => params.get('q') ?? '')
   const deferredQuery = useDeferredValue(query)
   // Category lives in the URL so footer/home links and shares land pre-filtered.
-  const [params, setParams] = useSearchParams()
   const category = params.get('category') ?? ''
   const setCategory = (slug: string) =>
     setParams(slug ? { category: slug } : {}, { replace: true, preventScrollReset: true })

@@ -4,7 +4,6 @@ import { JsonLd, Seo, organizationSchema } from '@/components/Seo'
 import { ButtonLink } from '@/components/ui/Button'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Reveal, RevealGroup, revealItem } from '@/components/ui/Reveal'
-import { ProductCard } from '@/components/ProductCard'
 import { CatalogCard } from '@/components/CatalogCard'
 import { IndustryTile } from '@/components/IndustryCard'
 import { CtaSection } from '@/components/CtaSection'
@@ -12,19 +11,12 @@ import { Faq, faqSchema } from '@/components/Faq'
 import { Img, PhotoPlaceholder } from '@/components/Img'
 import { BadgeSeal } from '@/components/BadgeSeal'
 import { BotanicalWatermark } from '@/components/PageHero'
-import { products } from '@/data/products'
-import { catalogBySlug } from '@/data/catalog'
+import { catalog } from '@/data/catalog'
 import { industries } from '@/data/industries'
 import { img } from '@/data/images'
 import { faqs, site, valueProps } from '@/data/site'
 
-// Home page "Key Products" — swap slugs from src/data/catalog.ts to feature others.
-const keyProducts = [
-  'plain-courier-bags-with-pod',
-  'bubble-courier-bags-with-pod',
-  'kraft-paper-courier-bags',
-  'corrugated-carton-boxes',
-].flatMap((slug) => catalogBySlug(slug) ?? [])
+const marketplaces = ['Amazon', 'Flipkart', 'Meesho', 'Myntra'] as const
 
 const valueIcons = [Award, Truck, Package, Handshake]
 
@@ -56,36 +48,41 @@ export default function Home() {
 
       <section className="container-page border-maroon/10 border-t py-14">
         <SectionHeading
-          title="Bestseller Products"
-          subtitle="Our most-ordered lines — open any one for the full size chart"
+          title="Products by Marketplace"
+          subtitle="Packaging products made for leading e-commerce platforms"
           action={
             <ButtonLink to="/products" variant="ghost" size="sm">
               View All Products →
             </ButtonLink>
           }
         />
-        <RevealGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {keyProducts.map((c) => (
-            <CatalogCard key={c.slug} item={c} />
-          ))}
-        </RevealGroup>
-      </section>
-      
-      <section className="container-page py-14">
-        <SectionHeading
-          title="Our Product Categories"
-          subtitle="Wide range of packaging solutions for every business need"
-          action={
-            <ButtonLink to="/products" variant="ghost" size="sm">
-              View All Products →
-            </ButtonLink>
-          }
-        />
-        <RevealGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {products.slice(0, 8).map((p) => (
-            <ProductCard key={p.slug} product={p} />
-          ))}
-        </RevealGroup>
+        <div className="mt-10 space-y-12">
+          {marketplaces.map((marketplace) => {
+            const items = catalog
+              .filter((item) => item.name.toLowerCase().includes(marketplace.toLowerCase()))
+              .slice(0, 4)
+
+            return (
+              <section key={marketplace} aria-label={`${marketplace} products`}>
+                <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+                  <h3 className="font-display text-2xl font-semibold">{marketplace}</h3>
+                  <ButtonLink
+                    to={`/products?q=${encodeURIComponent(marketplace)}`}
+                    variant="ghost"
+                    size="sm"
+                  >
+                    View all {marketplace} products →
+                  </ButtonLink>
+                </div>
+                <RevealGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                  {items.map((item) => (
+                    <CatalogCard key={item.slug} item={item} />
+                  ))}
+                </RevealGroup>
+              </section>
+            )
+          })}
+        </div>
       </section>
 
       <TrustedPartner />
