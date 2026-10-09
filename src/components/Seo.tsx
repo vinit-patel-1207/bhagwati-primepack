@@ -58,9 +58,9 @@ export const organizationSchema = {
   address: {
     '@type': 'PostalAddress',
     streetAddress: site.address.line1,
-    addressLocality: 'Ahmedabad',
-    addressRegion: 'Gujarat',
-    postalCode: '382430',
+    addressLocality: site.address.locality,
+    addressRegion: site.address.region,
+    postalCode: site.address.postalCode,
     addressCountry: 'IN',
   },
 }
