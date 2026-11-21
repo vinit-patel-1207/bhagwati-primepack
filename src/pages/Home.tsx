@@ -9,7 +9,7 @@ import { IndustryTile } from '@/components/IndustryCard'
 import { CtaSection } from '@/components/CtaSection'
 import { Faq, faqSchema } from '@/components/Faq'
 import { Img, PhotoPlaceholder } from '@/components/Img'
-import { BadgeSeal } from '@/components/BadgeSeal'
+// import { BadgeSeal } from '@/components/BadgeSeal'
 import { BotanicalWatermark } from '@/components/PageHero'
 import { catalog } from '@/data/catalog'
 import { industries } from '@/data/industries'
@@ -193,7 +193,7 @@ function Hero() {
               fallback={<PhotoPlaceholder label={img.heroHome.alt} />}
             />
           </div>
-          <div className="absolute -top-3 -right-1 flex items-center gap-3">
+          {/* <div className="absolute -top-3 -right-1 flex items-center gap-3">
             <BadgeSeal />
             <p className="text-maroon hidden text-sm leading-snug font-medium xl:block">
               Quality
@@ -202,7 +202,7 @@ function Hero() {
               <br />
               Partnership
             </p>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>
