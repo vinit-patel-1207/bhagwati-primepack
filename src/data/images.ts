@@ -1,8 +1,8 @@
 /**
  * Every image slot on the site, in one place.
  *
- * Paths resolve against `public/`, so `/images/hero-packaging.svg` means
- * `public/images/hero-packaging.svg`. Drop a file at that path and it appears —
+ * Paths resolve against `public/`, so `/images/hero-packaging.jpeg` means
+ * `public/images/hero-packaging.jpeg`. Drop a file at that path and it appears —
  * no code change. Until then `<Img>` renders a branded placeholder.
  *
  * ponytail: every slot ships filled with a vector illustration drawn in the
@@ -13,7 +13,7 @@
  */
 export const img = {
   heroHome: {
-    src: '/images/hero-packaging.svg',
+    src: '/images/hero-packaging.jpeg',
     alt: 'White and black poly courier bags, kraft mailers, a corrugated carton, tape rolls and a roll of bubble wrap arranged together',
   },
   heroAbout: {
